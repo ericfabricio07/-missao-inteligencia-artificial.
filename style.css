@@ -1,0 +1,76 @@
+:root {
+    --cor-fundo: #121214;
+    --cor-caixa: #1f1f23;
+    --cor-texto: #e1e1e6;
+    --cor-botao: #8257e5;
+    --cor-botao-hover: #9466ff;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.caixa-principal {
+    background-color: var(--caixa-fundo);
+    background: var(--cor-caixa);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--cor-botao);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.caixa-perguntas {
+    font-size: 18px;
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    background-color: var(--cor-botao);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.caixa-resultado {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(130, 87, 229, 0.1);
+    border-radius: 6px;
+    border: 1px solid var(--cor-botao);
+}
+
+.texto-resultado {
+    font-size: 16px;
+    line-height: 1.6;
+}
